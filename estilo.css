@@ -1,0 +1,70 @@
+.insigna{
+    width: 25rem;
+}
+.invierno{
+
+    width: 17rem;
+}
+.remera{
+    width: 17rem;
+}
+.chomba{
+    width: 17rem;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+.pantalon{
+    width: 17rem;
+}
+.adidas{
+    width: 17rem;
+}
+.botines{
+    width: 17rem;
+}
+.billetera{
+    width: 17rem;
+}
+.mate{
+    width: 17rem;
+}
+.Auris{width: 17rem}
+span{
+    text-decoration: line-through;
+    font-size: 2rem;
+}
+nav{
+    font-size: 2rem;
+}
+
+p{
+
+    font-size: 1.3rem;
+    font-style: inherit;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+
+font-size: 1rem;
+}
+h4{
+    font-size: 2rem;
+}
+h5{
+    font-size: 1rem;
+}
+h6{
+    font-size: 2rem ;
+}
+body{
+    background-color:wheat;
+}
+
+
+a{font-size: 2rem;}
