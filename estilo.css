@@ -1,20 +1,11 @@
-.insigna{
-    width: 25rem;
-}
-.invierno{
 
-    width: 17rem;
-}
 .remera{
     width: 17rem;
 }
 .chomba{
     width: 17rem;
 }
-h1{
-    color: red;
-    text-align: center;
-}
+
 .pantalon{
     width: 17rem;
 }
@@ -31,73 +22,176 @@ h1{
     width: 17rem;
 }
 .Auris{width: 17rem}
-span{
-    text-decoration: line-through;
-    font-size: 2rem;
-}
-nav{
-    font-size: 2rem;
-}
-
-p{
-
-    font-size: 1.3rem;
-    font-style: inherit;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-h3{
-
-font-size: 1rem;
-}
-h4{
-    font-size: 2rem;
-}
-h5{
-    font-size: 1rem;
-}
-h6{
-    font-size: 2rem ;
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* gris claro como usaste en bg-light */
+  color: #212529;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
-header img {
-  max-width: 100px;
+/* Encabezados */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #b71c1c; /* rojo oscuro de River, más intenso */
+  margin-bottom: 1rem;
 }
 
-/* Mejoras visuales */
-.card-title {
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Párrafos y textos */
+p, ul, li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Enlaces */
+a {
+  color: #b71c1c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #7f0000;
+  text-decoration: underline;
+}
+
+/* Navbar personalizado */
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
+.nav-link.active {
   font-weight: 600;
+  color: #fff !important;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/* Cards: espacio y sombra */
+.card {
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(183, 28, 28, 0.3);
+}
+
+.card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  object-fit: cover;
+  max-height: 250px;
 }
 
 /* Botones */
-.btn {
-  font-size: 0.95rem;
+.btn-outline-danger {
+  border-width: 2px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.btn-outline-danger:hover {
+  background-color: #b71c1c;
+  color: white;
+}
+
+.btn-danger {
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(183, 28, 28, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #7f0000;
+  box-shadow: 0 6px 12px rgba(127, 0, 0, 0.7);
+}
+
+/* Header */
+header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+header img {
+  max-width: 150px;
+}
+
+/* Listados y listas sin estilo */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Texto tachado para precios antiguos */
+.text-decoration-line-through {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Layout de botones dentro de las cards */
+.card-body .d-flex {
+  justify-content: start;
+}
+
+/* Para botones juntos con espacio */
+.card-body .d-flex.gap-2 button {
+  min-width: 110px;
+}
+
+/* Ajustes responsive para dispositivos móviles */
 @media (max-width: 576px) {
-  header h1 {
+
+  /* Texto más chico para headers */
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
     font-size: 1.5rem;
   }
 
-  .card-text {
-    font-size: 0.9rem;
+  h3 {
+    font-size: 1.25rem;
   }
 
-  .btn {
+  /* Adaptar botones a full ancho */
+  .btn-outline-danger,
+  .btn-danger {
     width: 100%;
   }
 
-  .d-flex.gap-2 {
+  /* En cards, que los botones apilen verticalmente */
+  .card-body .d-flex.gap-2 {
     flex-direction: column;
+  }
+
+  /* Limitar altura de imágenes para evitar que queden muy grandes */
+  .card-img-top {
+    max-height: 180px;
+  }
+
+  /* Header img */
+  header img {
+    max-width: 100px;
   }
 }
 
-a{font-size: 2rem;}
+/* Scroll suave para enlaces internos si los agregás */
+html {
+  scroll-behavior: smooth;
+}
